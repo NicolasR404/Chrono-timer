@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+migrations/
 
 # C extensions
 *.so
@@ -60,7 +61,7 @@ cover/
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
-/timer/migrations
+timer/migrations
 
 # Flask stuff:
 instance/

@@ -1,16 +1,17 @@
-from django.shortcuts import render
+# from django.shortcuts import render
 
 # Create your views here.
 from django.views.generic import TemplateView
+# from django
 
-class HomePageView (TemplateView):
-    template_name = "Home.html"
+class HomePageView(TemplateView):
+    template_name = "home.html"
 
-class ProfilPageView (TemplateView):
-    template_name = "Profil.html"
+class ProfilPageView(TemplateView):
+    template_name = "profil.html"
 
-class TimerSettingPageView (TemplateView):
-    template_name = "TimerSetting.html"
+class TimerSettingPageView(TemplateView):
+    template_name = "timer_setting.html"
 
-class TimerPageView (TemplateView):
-    template_name = "Timer.html"
+class TimerPageView(TemplateView):
+    template_name = "timer.html"
