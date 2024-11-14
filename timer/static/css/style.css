@@ -1,0 +1,31 @@
+.link_general{
+    
+    border: 2px solid;
+    background-color: rgb(255 0 0 / 50%);
+    
+}
+
+nav{
+    width: 30%;
+    display: flex;
+    background-color: blue;
+}
+
+ul {
+    background-color: rgba(0, 255, 170, 0.5);
+    width : 100%; 
+    display: flex;
+    border: 1px;
+    margin: 5px;
+    padding: 0;
+    /* 172 */
+}
+
+h3{
+    width : 40%;
+}
+
+a{
+     
+    color: white;
+}
