@@ -1,31 +1,97 @@
+
+/* Header */
+
 .link_general{
-    
     border: 2px solid;
-    background-color: rgb(255 0 0 / 50%);
-    
+    /* background-color: rgb(255 0 0 / 50%); */
 }
 
 nav{
     width: 30%;
     display: flex;
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 ul {
-    background-color: rgba(0, 255, 170, 0.5);
+    /* background-color: rgba(0, 255, 170, 0.5); */
     width : 100%; 
     display: flex;
     border: 1px;
     margin: 5px;
-    padding: 0;
-    /* 172 */
+
 }
 
 h3{
     width : 40%;
 }
 
-a{
+/* a{
      
     color: white;
+} */
+
+/* Body */
+
+div div {
+    height: 250px;
+    padding: 25px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(109, 2, 2); */
+}
+
+div div div{  /* Zone login */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    /* background-color: rgb(255 0 0 / 50%); */
+}
+
+input{
+    height: 20px;
+}
+
+/* #Login{
+    height: 20px;
+}
+
+#Password{
+    height: 20px;
+} */
+
+.ZoneLogin{
+    /* background-color: rgba(0, 255, 149, 0.5); */
+    width: 25%;
+    height: 250px;
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+div div div div { /* div liée au bouton */
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+    /* background-color: rgba(0, 255, 149, 0.5); */
+}
+
+div div div div button{
+    height: 35px;
+    width: 115px;
+}
+
+div div div h3{
+    /* height: 35px; */
+    width: 150px;
+    margin: 0%;
+    font-size: small;
 }
