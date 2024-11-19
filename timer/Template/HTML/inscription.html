@@ -9,6 +9,36 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 
+<header>
+    
+    <div class="link_general">
+        <nav>
+            <ul>
+                <h3><a href="{%url 'profil' %}">Profil</a></h3>
+                <h3><a href="{%url 'timer_setting' %}">Timer setting</a></h3>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<body>
+    <div>
+        <div id="placement_flex_one"></div>
+        <div>
+            <div id="placement_image"></div>
+            <div class="ZoneLogin"> <!-- Zone de connexion -->
+                <input type="text" placeholder="Login" id="Login">
+                <input type="text" placeholder="Password" id="Password">
+                <input type="text" placeholder="Repeat password" id="RepeatPassword">
+                <div>
+                    <button>Valider</button>
+                <div>
+                <h3><a href="{%url 'home' %}">Login </a></h3>
+            </div>
+        </div>
+    </div>
+</body>
 
 {% block content %}
 {% endblock content %}

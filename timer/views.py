@@ -15,3 +15,6 @@ class TimerSettingPageView(TemplateView):
 
 class TimerPageView(TemplateView):
     template_name = "timer.html"
+
+class InscriptionPageView(TemplateView):
+    template_name = "inscription.html"

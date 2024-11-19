@@ -32,6 +32,10 @@ h3{
 
 /* Body */
 
+#placement_flex_one{
+    height: 75px;
+}
+
 div div {
     height: 250px;
     padding: 25px 0px;
@@ -66,7 +70,10 @@ input{
     /* background-color: rgba(0, 255, 149, 0.5); */
     width: 25%;
     height: 250px;
-    border: 2px solid;
+    border: 2px groove;
+    border-radius: 10%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,8 +97,7 @@ div div div div button{
 }
 
 div div div h3{
-    /* height: 35px; */
     width: 150px;
     margin: 0%;
-    font-size: small;
+    font-size: smaller;
 }
