@@ -20,12 +20,13 @@ function selected_template(dict_template_selected, template_selected){
 }
 
 // Element Css/Html
-const buttonElement = document.getElementById('buttonTemporaire')
+const buttonElement = document.getElementById('buttonTemporaire');
 const root = document.documentElement;
 
 // Version button test, permet de changer de template
 buttonElement.addEventListener ('click', () => {
-    selected_template(dict_template_selected, template_vert)
+    selected_template(dict_template_selected, template_vert);
+    console.log(dict_template_selected);
 
     // Changement des differentes variable liée a la couleur
     root.style.setProperty('--couleur_primaire', dict_template_selected[couleur_primaire]);
