@@ -13,14 +13,14 @@ var dict_template_selected = {
 };
 
 function selected_template(dict_template_selected, template_selected){
-    for (let i = 0; i<4; i++){
-        dict_template_selected[i] = template_selected[i];
-
-    }
+    dict_template_selected.couleur_primaire = template_selected[0];
+    dict_template_selected.couleur_secondaire = template_selected[1];
+    dict_template_selected.couleur_detail = template_selected[2];
+    dict_template_selected.couleur_second_detail = template_selected[3];
 }
 
 // Element Css/Html
-const buttonElement = document.getElementById('buttonTemporaire');
+const buttonElement = document.getElementById('swap_template');
 const root = document.documentElement;
 
 // Version button test, permet de changer de template
@@ -29,8 +29,8 @@ buttonElement.addEventListener ('click', () => {
     console.log(dict_template_selected);
 
     // Changement des differentes variable liée a la couleur
-    root.style.setProperty('--couleur_primaire', dict_template_selected[couleur_primaire]);
-    root.style.setProperty('--couleur_secondaire', dict_template_selected[couleur_secondaire]);
-    root.style.setProperty('--couleur_detail', dict_template_selected[couleur_detail]);
-    root.style.setProperty('--couleur_second_detail', dict_template_selected[couleur_second_detail]);
+    root.style.setProperty('--couleur_primaire', dict_template_selected.couleur_primaire);
+    root.style.setProperty('--couleur_secondaire', dict_template_selected.couleur_secondaire);
+    root.style.setProperty('--couleur_detail', dict_template_selected.couleur_detail);
+    root.style.setProperty('--couleur_second_detail', dict_template_selected.couleur_second_detail);
 });
