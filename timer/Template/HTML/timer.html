@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+
+<header>
+    
+    <div class="link_general">
+        <nav>
+            <ul>
+                <h3><a href="{%url 'profil' %}">Profil</a></h3>
+                <h3><a href="{%url 'timer_setting' %}">Timer setting</a></h3>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <div> <!-- div principale -->
+        <div> <!-- div où il y a le timer -->
+            <h2 class="timer" id="timer"> 00:00:00</h2> <!-- balise h2 à changer ? -->
+        </div>
+        <button class="Start" onclick="startTimer()">Start</button>
+        <button class="Stop" onclick="stopTimer()">Stop</button>
+        <button class="Reset" onclick="resetTimer()">Reset</button>
+        <div> 
+            <button>Enregister</button>
+        </div>
+    </div>
+
+    
+
+    <script src="{% static 'js/timer.js' %}"></script> <!-- Lien vers le JS -->
+</body>
+{% block content %}
+{% endblock content %}
