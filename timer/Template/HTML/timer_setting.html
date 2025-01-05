@@ -1,12 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+
 <header>
-    <link rel="stylesheet" href="{% static 'Static/CSS/style.css' %}">
+    
+    <div class="link_general">
+        <nav>
+            <ul>
+                <h3><a href="{%url 'profil' %}">Profil</a></h3>
+                <h3><a href="{%url 'timer_setting' %}">Timer setting</a></h3>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     
     <h1>Hello World Timer Setting</h1>
     <div>
         <nav>
             <div>
-                <li><a href="{%url 'timer' %}"></a></li>
+                <li><a href="{%url 'timer' %}">Timer</a></li>
             </div>
         </nav>
     </div>
-</header>
+</body>
+
+{% block content %}
+{% endblock content %}

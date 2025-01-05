@@ -24,14 +24,18 @@
 
 <body>
     <div> <!-- div principale -->
+        <div id="placement_block_1"></div>
         <div> <!-- div où il y a le timer -->
-            <h2 class="timer" id="timer"> 00:00:00</h2> <!-- balise h2 à changer ? -->
+            <h2 class="timer" id="timer"> 00:00:00</h2> <!-- balise h2 à changer ?, plus gros -->
         </div>
-        <button class="Start" onclick="startTimer()">Start</button>
-        <button class="Stop" onclick="stopTimer()">Stop</button>
-        <button class="Reset" onclick="resetTimer()">Reset</button>
+        <div id="bouton_timer_read">
+            <button class="Start" onclick="startTimer()">Start</button>
+            <button class="Stop" onclick="stopTimer()">Stop</button>
+            <button class="Reset" onclick="resetTimer()">Reset</button>
+        </div>
         <div> 
-            <button>Enregister</button>
+            <button class="Tours" onclick="toursTimer()">Tours</button>
+            <button class="Save" onclick="saveTimer()">Enregister</button>
         </div>
     </div>
 
